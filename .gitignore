@@ -2,6 +2,7 @@
 credentials/gemini.json
 credentials/cos.json
 credentials/r2.json
+credentials/notion.json
 
 # Python 虚拟环境
 scripts/python/.venv/

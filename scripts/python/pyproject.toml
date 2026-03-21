@@ -5,6 +5,7 @@ description = "Markdown 文档风格配图生成器"
 requires-python = ">=3.9"
 dependencies = [
     "google-genai>=1.0.0",
+    "requests>=2.28.0",
 ]
 
 [tool.uv]
