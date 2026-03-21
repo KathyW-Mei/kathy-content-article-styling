@@ -22,22 +22,18 @@ def load_json(path):
 
 
 def get_discord_bot_token(oc_config):
-    accounts = (
-        oc_config.get("channels", {})
-        .get("discord", {})
-        .get("accounts", [])
-    )
-    for acc in accounts:
-        token = acc.get("botToken")
-        if token:
-            return token
-    raise ValueError("No Discord bot token found in openclaw.json")
+    token = oc_config.get("channels", {}).get("discord", {}).get("token")
+    if token:
+        return token
+    raise ValueError("No Discord bot token found in openclaw.json channels.discord.token")
 
 
 def get_channel_id_for_agent(oc_config, agent_id):
     for b in oc_config.get("bindings", []):
         if b.get("agentId") == agent_id:
-            return b.get("channelId")
+            return (b.get("match", {})
+                     .get("peer", {})
+                     .get("id"))
     return None
 
 
