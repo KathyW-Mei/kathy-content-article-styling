@@ -1,0 +1,451 @@
+{
+  "cover_styles": [
+    {
+      "id": "gradient-tech",
+      "name": "渐变科技",
+      "description": "蓝紫渐变、3D玻璃质感，适合科技产品/AI主题",
+      "file": "cover1-gradient-tech.png",
+      "prompt_hint": "Gradient blue-purple colors, 3D glass morphism, tech conference style"
+    },
+    {
+      "id": "news-press",
+      "name": "新闻报刊",
+      "description": "报纸版式、红黑配色，适合新闻资讯",
+      "file": "cover2-news-press.png",
+      "prompt_hint": "Newspaper layout style, red and black colors, bold typography"
+    },
+    {
+      "id": "notebook-doodle",
+      "name": "笔记本涂鸦",
+      "description": "线圈本背景、彩色手写字，适合教程/攻略",
+      "file": "cover3-notebook-doodle.jpg",
+      "prompt_hint": "Notebook paper background with spiral binding, colorful hand-drawn text"
+    },
+    {
+      "id": "sketch-doodle",
+      "name": "简笔涂鸦",
+      "description": "手绘简笔画、黄色高亮，适合小红书/教程类",
+      "file": "cover4-sketch-doodle.jpg",
+      "prompt_hint": "Hand-drawn sketch style, simple line art, yellow highlights"
+    },
+    {
+      "id": "warm-3d",
+      "name": "暖色3D",
+      "description": "暖色调3D图标、渐变背景，适合设计教程/APP展示",
+      "file": "cover5-warm-3d.jpg",
+      "prompt_hint": "Warm pastel colors, 3D glossy icons, dark gradient background, elegant product showcase"
+    },
+    {
+      "id": "comic-yellow",
+      "name": "漫画黄",
+      "description": "简约漫画风、黄色背景，适合轻松话题/功能介绍",
+      "file": "cover6-comic-yellow.png",
+      "prompt_hint": "Simple comic illustration style, yellow background, cute cartoon characters, casual tone"
+    },
+    {
+      "id": "tech-circuit",
+      "name": "科技电路",
+      "description": "蓝色背景+电路线条，适合云服务/基础设施",
+      "file": "cover7-tech-circuit.jpg",
+      "prompt_hint": "Blue background with circuit board lines, tech infrastructure style, digital network visualization"
+    },
+    {
+      "id": "glass-sphere",
+      "name": "玻璃球宇宙",
+      "description": "黑色背景+3D玻璃球，适合AI/游戏/元宇宙",
+      "file": "cover8-glass-sphere.jpg",
+      "prompt_hint": "Black background, 3D glass sphere, cosmic atmosphere, AI/metaverse aesthetic"
+    },
+    {
+      "id": "ticket-bw",
+      "name": "黑白票据",
+      "description": "机票/票据风格，适合工具介绍/产品发布",
+      "file": "cover9-ticket-bw.png",
+      "prompt_hint": "Black and white ticket/boarding pass style, minimalist product announcement"
+    },
+    {
+      "id": "ticket-detail",
+      "name": "票据详情",
+      "description": "机票风格2.0，适合教程/功能详解",
+      "file": "cover10-ticket-detail.jpg",
+      "prompt_hint": "Detailed ticket/boarding pass style, tutorial and feature breakdown layout"
+    },
+    {
+      "id": "warm-spiral",
+      "name": "暖色螺旋",
+      "description": "暖色3D曲线，适合创作教程/Agent介绍",
+      "file": "cover11-warm-spiral.jpg",
+      "prompt_hint": "Warm pastel 3D spiral curves, creative tutorial style, agent/AI workflow introduction"
+    },
+    {
+      "id": "code-night",
+      "name": "代码夜空",
+      "description": "代码背景+星月，适合开发者工具/Skills",
+      "file": "cover12-code-night.jpg",
+      "prompt_hint": "Code syntax background with moon and stars, developer tools aesthetic, night sky theme"
+    },
+    {
+      "id": "city-starry",
+      "name": "星空城市",
+      "description": "星空+城市摄影，适合年度总结/个人故事",
+      "file": "cover13-city-starry.jpg",
+      "prompt_hint": "Starry sky over cityscape photography, annual review style, personal narrative"
+    },
+    {
+      "id": "finance-dark",
+      "name": "金融深蓝",
+      "description": "深蓝渐变+金色箭头，适合商业/变现主题",
+      "file": "cover14-finance-dark.jpg",
+      "prompt_hint": "Deep blue gradient with golden arrows, business monetization theme, professional finance style"
+    },
+    {
+      "id": "github-green",
+      "name": "GitHub绿",
+      "description": "深绿背景+发光图标，适合开源/GitHub主题",
+      "file": "cover15-github-green.jpg",
+      "prompt_hint": "Deep green background with glowing icons, open source theme, GitHub contribution style"
+    },
+    {
+      "id": "cli-code",
+      "name": "CLI代码",
+      "description": "代码背景+CLI命令，适合开发工具/命令行",
+      "file": "cover16-cli-code.png",
+      "prompt_hint": "Code syntax background with CLI commands, developer tools, terminal aesthetic"
+    },
+    {
+      "id": "dark-grid-3d",
+      "name": "深蓝网格3D",
+      "description": "深蓝网格背景+3D卡通人物，适合AI知识科普/概念解释",
+      "file": "cover17-dark-grid-3d.jpg",
+      "prompt_hint": "Dark blue grid background, 3D cartoon character (Einstein style), knowledge explainer, AI concept education"
+    },
+    {
+      "id": "neon-cloud",
+      "name": "霓虹云朵",
+      "description": "黑色背景+霓虹云朵图标，适合科技新闻/产品发布",
+      "file": "cover18-neon-cloud.jpg",
+      "prompt_hint": "Black background with neon glowing cloud icons, tech news style, product announcement, futuristic aesthetic"
+    },
+    {
+      "id": "purple-release",
+      "name": "紫色发布",
+      "description": "深紫渐变+光线效果，适合产品发布/开源公告",
+      "file": "cover19-purple-release.jpg",
+      "prompt_hint": "Deep purple gradient with light rays, product release announcement, open source launch style"
+    },
+    {
+      "id": "sketch-interview",
+      "name": "速写访谈",
+      "description": "手绘速写+橙色高亮，适合人物访谈/创业故事",
+      "file": "cover20-sketch-interview.jpg",
+      "prompt_hint": "Hand-drawn sketch portrait with orange highlights, podcast interview style, startup founder story"
+    },
+    {
+      "id": "blue-note-card",
+      "name": "蓝底便签",
+      "description": "蓝色背景+白色便签卡，适合思考/讨论/观点",
+      "file": "cover21-blue-note-card.jpg",
+      "prompt_hint": "Blue background with white note card, discussion style, opinion piece, thought leadership"
+    },
+    {
+      "id": "dark-quote",
+      "name": "深色引言",
+      "description": "深灰背景+大引号+金色文字，适合深度文章/技术观点",
+      "file": "cover22-dark-quote.jpg",
+      "prompt_hint": "Dark gray background with large quotation marks, golden text, deep article style, technical opinion piece"
+    }
+  ],
+  "main_styles": [
+    {
+      "id": "info-card",
+      "name": "信息卡片",
+      "description": "卡片式布局、中央人物、周围信息块，适合介绍性文章",
+      "file": "main1-info-card.jpg",
+      "prompt_hint": "Central figure with surrounding info cards, warm pastel colors, magazine-style layout"
+    },
+    {
+      "id": "knowledge-theory",
+      "name": "知识理论",
+      "description": "传播学/心理学理论可视化，螺旋/漏斗结构，适合学术科普",
+      "file": "main2-knowledge-theory.jpg",
+      "prompt_hint": "Academic theory visualization, spiral or funnel structure, icons with explanatory text"
+    },
+    {
+      "id": "infographic",
+      "name": "信息图表",
+      "description": "知识图谱、流程可视化，适合数据分析和政策解读",
+      "file": "main3-infographic.jpg",
+      "prompt_hint": "Infographic style, knowledge graph, flow visualization, soft watercolor backgrounds"
+    },
+    {
+      "id": "gradient-tech",
+      "name": "渐变科技",
+      "description": "蓝紫渐变、3D玻璃质感，适合科技产品/AI主题",
+      "file": "main4-gradient-tech.jpg",
+      "prompt_hint": "Gradient blue-purple colors, 3D glass morphism, tech product style"
+    },
+    {
+      "id": "edu-illustration",
+      "name": "科普插画",
+      "description": "自然科学、地理循环，适合教育/学科知识",
+      "file": "main5-edu-illustration.jpg",
+      "prompt_hint": "Educational illustration style, natural science diagrams, labeled components"
+    },
+    {
+      "id": "notebook-doodle",
+      "name": "笔记本涂鸦",
+      "description": "线圈本背景、彩色手写字，适合教程/攻略",
+      "file": "main6-notebook-doodle.png",
+      "prompt_hint": "Notebook paper background, colorful hand-drawn text, simple doodle decorations"
+    },
+    {
+      "id": "sketch-doodle",
+      "name": "简笔涂鸦",
+      "description": "手绘简笔画、黄色高亮，适合小红书/教程类",
+      "file": "main7-sketch-doodle.jpg",
+      "prompt_hint": "Hand-drawn sketch style, simple line art, yellow highlights, doodle aesthetic"
+    },
+    {
+      "id": "watercolor-journal",
+      "name": "水彩手帐",
+      "description": "水彩手绘旅行手帐风格，适合行程规划/生活记录",
+      "file": "main8-watercolor-journal.jpg",
+      "prompt_hint": "Watercolor travel journal style, hand-drawn illustrations, scenic vignettes, soft pastel colors, vintage postcard aesthetic"
+    },
+    {
+      "id": "infographic-warm",
+      "name": "暖色信息图",
+      "description": "米色背景+图标卡片，适合开源项目/功能介绍",
+      "file": "main9-infographic-warm.jpg",
+      "prompt_hint": "Warm beige background with icon cards, open source project style, feature introduction"
+    },
+    {
+      "id": "watercolor-person",
+      "name": "水彩人物",
+      "description": "水彩手绘人物，适合人物介绍/产品解说",
+      "file": "main10-watercolor-person.jpg",
+      "prompt_hint": "Watercolor hand-painted portrait style, character introduction, product explanation"
+    },
+    {
+      "id": "portrait-quote",
+      "name": "肖像名言",
+      "description": "棕色渐变+人物肖像，适合名人名言/励志",
+      "file": "main11-portrait-quote.jpg",
+      "prompt_hint": "Brown gradient with portrait, famous quotes style, inspirational content"
+    },
+    {
+      "id": "chalkboard-chem",
+      "name": "黑板化学",
+      "description": "黑板粉笔画，适合学科知识/教育科普",
+      "file": "main12-chalkboard-chem.jpg",
+      "prompt_hint": "Chalkboard chalk drawing style, subject knowledge, educational science"
+    },
+    {
+      "id": "chalkboard-story",
+      "name": "黑板故事",
+      "description": "黑板画+木框，适合文学/历史/故事",
+      "file": "main13-chalkboard-story.jpg",
+      "prompt_hint": "Chalkboard with wooden frame, literature history storytelling style"
+    },
+    {
+      "id": "proscons-purple",
+      "name": "紫色对比卡",
+      "description": "紫色渐变+对比列表，适合优缺点分析",
+      "file": "main14-proscons-purple.jpg",
+      "prompt_hint": "Purple gradient with pros/cons comparison list, analytical style"
+    },
+    {
+      "id": "whiteboard-lit",
+      "name": "白板文学",
+      "description": "白板手写笔记，适合文学分析/读书笔记",
+      "file": "main15-whiteboard-lit.jpg",
+      "prompt_hint": "Whiteboard handwritten notes, literary analysis, reading notes style"
+    },
+    {
+      "id": "isometric-gray",
+      "name": "灰色等距",
+      "description": "灰色背景+3D等距图标，适合技术配置/工具",
+      "file": "main16-isometric-gray.jpg",
+      "prompt_hint": "Gray background with 3D isometric icons, tech configuration, tools style"
+    },
+    {
+      "id": "concept-compare",
+      "name": "概念对比",
+      "description": "米色背景+线团vs线轴，适合问题/解决方案",
+      "file": "main17-concept-compare.jpg",
+      "prompt_hint": "Beige background with yarn ball vs spool metaphor, problem/solution comparison"
+    },
+    {
+      "id": "notebook-plan",
+      "name": "笔记本计划",
+      "description": "真实笔记本照片，适合计划/日程/攻略",
+      "file": "main18-notebook-plan.jpg",
+      "prompt_hint": "Real notebook photography, planning schedule strategy style"
+    },
+    {
+      "id": "vintage-crab",
+      "name": "复古插画",
+      "description": "复古手绘风格，适合开发者幽默/debug",
+      "file": "main19-vintage-crab.jpg",
+      "prompt_hint": "Vintage hand-drawn illustration, developer humor, debug meme style"
+    },
+    {
+      "id": "tech-doodle",
+      "name": "技术涂鸦",
+      "description": "米色+卡通流程，适合技术教程/操作指南",
+      "file": "main20-tech-doodle.jpg",
+      "prompt_hint": "Beige background with cartoon workflow, tech tutorial, operation guide"
+    },
+    {
+      "id": "manga-list",
+      "name": "漫画列表",
+      "description": "黑白漫画风，适合变量/指标/清单说明",
+      "file": "main21-manga-list.jpg",
+      "prompt_hint": "Black and white manga style, variable metrics checklist explanation"
+    },
+    {
+      "id": "cartoon-compare",
+      "name": "卡通对比",
+      "description": "米色+魔法师卡通，适合前后对比/概念变化",
+      "file": "main22-cartoon-compare.jpg",
+      "prompt_hint": "Beige with wizard cartoon, before/after comparison, concept transformation"
+    },
+    {
+      "id": "whiteboard-job",
+      "name": "白板招聘",
+      "description": "白板风格信息图，适合招聘/岗位/流程",
+      "file": "main23-whiteboard-job.jpg",
+      "prompt_hint": "Whiteboard infographic style, job recruitment, position workflow"
+    },
+    {
+      "id": "cartoon-skill",
+      "name": "卡通技能",
+      "description": "米色+乐高人物，适合技能组合/模块化概念",
+      "file": "main24-cartoon-skill.jpg",
+      "prompt_hint": "Beige with LEGO figure cartoon, skill combination, modular concept"
+    },
+    {
+      "id": "meeting-sketch",
+      "name": "会议速写",
+      "description": "白底线描会议场景，适合团队/协作/AI创业",
+      "file": "main25-meeting-sketch.jpg",
+      "prompt_hint": "White background line sketch meeting scene, team collaboration, AI startup style"
+    },
+    {
+      "id": "split-compare",
+      "name": "分屏对比",
+      "description": "黑白线描左右对比，适合思考/选择/权衡",
+      "file": "main26-split-compare.jpg",
+      "prompt_hint": "Black and white line drawing split comparison, thinking choice tradeoff style"
+    },
+    {
+      "id": "roadmap-city",
+      "name": "路线城市",
+      "description": "线描分岔路，适合技术选型/方案对比",
+      "file": "main27-roadmap-city.jpg",
+      "prompt_hint": "Line drawing forked road with city, tech stack selection, solution comparison"
+    },
+    {
+      "id": "restaurant-skill",
+      "name": "餐厅技能",
+      "description": "餐厅场景+技能板，适合技能介绍/团队分工",
+      "file": "main28-restaurant-skill.jpg",
+      "prompt_hint": "Restaurant scene with skill board, skill introduction, team division style"
+    },
+    {
+      "id": "ai-workflow",
+      "name": "AI工作流",
+      "description": "紫色渐变+流程图，适合AI产品/技术流程",
+      "file": "main29-ai-workflow.jpg",
+      "prompt_hint": "Purple gradient with workflow diagram, AI product, tech pipeline visualization"
+    },
+    {
+      "id": "dark-tech-flow",
+      "name": "深蓝技术流",
+      "description": "深蓝渐变+3D流程图+图标，适合架构解析/产品功能图",
+      "file": "main30-dark-tech-flow.jpg",
+      "prompt_hint": "Dark blue gradient with 3D workflow diagram, tech architecture breakdown, feature explanation with icons"
+    },
+    {
+      "id": "whiteboard-arch",
+      "name": "白板架构",
+      "description": "白板风格+流程对比，适合技术架构/框架对比",
+      "file": "main31-whiteboard-arch.jpg",
+      "prompt_hint": "Whiteboard style with workflow comparison, tech architecture diagram, framework comparison"
+    },
+    {
+      "id": "crayon-flow",
+      "name": "彩铅流程",
+      "description": "彩铅手绘风格+可爱图标，适合系统流程/记忆机制",
+      "file": "main32-crayon-flow.jpg",
+      "prompt_hint": "Crayon hand-drawn style with cute icons, system flow diagram, memory mechanism explanation"
+    },
+    {
+      "id": "mindmap-person",
+      "name": "人物思维导图",
+      "description": "中央人物+发散思维导图，适合个人品牌/商业画布",
+      "file": "main33-mindmap-person.jpg",
+      "prompt_hint": "Central person figure with radiating mind map, personal branding, business model canvas style"
+    },
+    {
+      "id": "compare-card",
+      "name": "对比卡片",
+      "description": "蓝白双栏+卡通人物，适合产品对比/功能列表",
+      "file": "main34-compare-card.jpg",
+      "prompt_hint": "Blue and white two-column layout with cartoon character, product comparison, feature checklist"
+    },
+    {
+      "id": "data-table",
+      "name": "数据表格",
+      "description": "浅蓝渐变+数据表格+人物，适合财经数据/投资分析",
+      "file": "main35-data-table.jpg",
+      "prompt_hint": "Light blue gradient with data table and character, financial data, investment analysis style"
+    },
+    {
+      "id": "skill-grid",
+      "name": "技能网格",
+      "description": "笔记本背景+功能网格卡片，适合工具推荐/Skills清单",
+      "file": "main36-skill-grid.jpg",
+      "prompt_hint": "Notebook background with feature grid cards, tool recommendation, skills checklist style"
+    },
+    {
+      "id": "grid-compare",
+      "name": "方格对比",
+      "description": "方格纸背景+手绘对比图，适合烹饪科学/方法对比",
+      "file": "main37-grid-compare.jpg",
+      "prompt_hint": "Grid paper background with hand-drawn comparison, cooking science, method comparison style"
+    },
+    {
+      "id": "comic-orange",
+      "name": "漫画橙",
+      "description": "漫画风格+橙色标题+爆款封面，适合博主内容/教程推荐",
+      "file": "main38-comic-orange.jpg",
+      "prompt_hint": "Comic illustration style with orange title, viral cover design, blogger content recommendation"
+    },
+    {
+      "id": "cute-health",
+      "name": "可爱健康",
+      "description": "可爱卡通+淡彩流程，适合生活科普/健康清单",
+      "file": "main39-cute-health.jpg",
+      "prompt_hint": "Cute cartoon style with pastel flow diagram, lifestyle tips, health checklist"
+    },
+    {
+      "id": "handwrite-opinion",
+      "name": "手写观点",
+      "description": "白纸手写体+荧光高亮，适合观点表达/随笔感悟",
+      "file": "main40-handwrite-opinion.jpg",
+      "prompt_hint": "White paper with handwritten text and fluorescent highlights, opinion piece, casual essay style"
+    },
+    {
+      "id": "balance-concept",
+      "name": "天平概念",
+      "description": "天平隐喻+概念对比，适合价值权衡/技术选型",
+      "file": "main41-balance-concept.jpg",
+      "prompt_hint": "Balance scale metaphor with concept comparison, value tradeoff, tech stack selection style"
+    }
+  ],
+  "defaults": {
+    "cover": "gradient-tech",
+    "main": "info-card"
+  }
+}

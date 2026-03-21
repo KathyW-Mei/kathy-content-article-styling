@@ -1,0 +1,11 @@
+[project]
+name = "xiangyu-content-article-styling"
+version = "1.0.0"
+description = "Markdown 文档风格配图生成器"
+requires-python = ">=3.9"
+dependencies = [
+    "google-genai>=1.0.0",
+]
+
+[tool.uv]
+dev-dependencies = []

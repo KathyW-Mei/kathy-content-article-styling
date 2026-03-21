@@ -1,0 +1,15 @@
+# 凭证（不提交真实 API Key）
+credentials/gemini.json
+credentials/cos.json
+credentials/r2.json
+
+# Python 虚拟环境
+scripts/python/.venv/
+scripts/python/__pycache__/
+scripts/python/*.pyc
+
+# 生成的运行目录
+runs/
+
+# 系统文件
+.DS_Store
