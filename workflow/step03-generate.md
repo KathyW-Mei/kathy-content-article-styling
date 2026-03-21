@@ -24,16 +24,13 @@
 
 ### 1. 运行生成脚本
 
-**注意**：Shell 脚本统一用 `bash` 前缀调用，避免文件权限问题。
-
 ```bash
-SKILL_DIR="$HOME/.claude/skills/xiangyu-content-article-styling"
+# 从 config.json 读取 skill_dir（Step 01 已写入）
+SKILL_DIR=$(python3 -c "import json; print(json.load(open('$RUN_DIR/state/config.json'))['directories']['skill_dir'])")
 mkdir -p "$RUN_DIR/logs"
 
-# 用 bash 前缀调用，避免权限问题
-bash "$SKILL_DIR/scripts/shell/precheck.sh" "$RUN_DIR"
-
-"$SKILL_DIR/scripts/python/.venv/bin/python" \
+# 使用系统 python3（OpenClaw/Zeabur 环境）
+python3 \
   "$SKILL_DIR/scripts/python/generate_image.py" \
   --run-dir "$RUN_DIR" \
   --skill-dir "$SKILL_DIR" \

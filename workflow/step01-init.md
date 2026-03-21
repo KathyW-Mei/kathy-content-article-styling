@@ -165,7 +165,15 @@ fi
 ### 5. 创建运行目录
 
 ```bash
-SKILL_DIR="$HOME/.claude/skills/xiangyu-content-article-styling"
+# 自动检测运行环境，确定 SKILL_DIR
+if [ -d "/home/node/.openclaw" ]; then
+  # OpenClaw/Zeabur 环境：找当前 agent workspace 下的 skill
+  SKILL_DIR=$(find /home/node/.openclaw/workspace-*/skills/kathy-content-article-styling -maxdepth 0 -type d 2>/dev/null | head -1)
+else
+  # Claude Code 本地环境
+  SKILL_DIR="$HOME/.claude/skills/xiangyu-content-article-styling"
+fi
+
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 RUN_DIR="$SKILL_DIR/runs/${KEYWORD}-${TIMESTAMP}"
 
@@ -211,7 +219,7 @@ platform_config = platforms[platform_id]
   },
   "directories": {
     "run_dir": "/path/to/runs/keyword-timestamp",
-    "skill_dir": "/path/to/skill"
+    "skill_dir": "/home/node/.openclaw/workspace-xhs/skills/kathy-content-article-styling"
   },
   "created_at": "2026-01-29T10:00:00Z"
 }
