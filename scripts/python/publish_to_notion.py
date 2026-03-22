@@ -117,12 +117,13 @@ def md_to_blocks(md_text, url_map):
     return blocks
 
 
-def create_notion_page(token, database_id, title, blocks, plain_text):
+def create_notion_page(token, database_id, title, blocks, plain_text, platform="小红书"):
     payload = {
         "parent": {"database_id": database_id},
         "properties": {
             "标题": {"title": [{"text": {"content": title}}]},
             "笔记内容": {"rich_text": [{"text": {"content": plain_text[:2000]}}]},
+            "平台": {"select": {"name": platform}},
         },
         "children": blocks[:100],
     }
@@ -154,6 +155,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-dir", required=True)
     parser.add_argument("--skill-dir", required=True)
+    parser.add_argument("--platform", default="小红书",
+                        help="平台名称，需与 Notion 平台字段选项一致")
     args = parser.parse_args()
 
     run_dir = Path(args.run_dir)
@@ -221,9 +224,10 @@ def main():
     plain_text = re.sub(r"\n{3,}", "\n\n", plain_text).strip()
 
     title = config["document"]["title"]
-    print(f"Creating Notion page: {title}", file=sys.stderr)
+    platform = args.platform
+    print(f"Creating Notion page: {title} [{platform}]", file=sys.stderr)
 
-    page = create_notion_page(notion_token, database_id, title, blocks, plain_text)
+    page = create_notion_page(notion_token, database_id, title, blocks, plain_text, platform)
     notion_url = page.get("url", "")
     print(f"  ✓ {notion_url}", file=sys.stderr)
 
