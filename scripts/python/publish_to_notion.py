@@ -124,6 +124,7 @@ def create_notion_page(token, database_id, title, blocks, plain_text, platform="
             "标题": {"title": [{"text": {"content": title}}]},
             "笔记内容": {"rich_text": [{"text": {"content": plain_text[:2000]}}]},
             "平台": {"select": {"name": platform}},
+            "状态": {"select": {"name": "draft"}},
         },
         "children": blocks[:100],
     }
